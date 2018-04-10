@@ -1,0 +1,33 @@
+OVERVIEW:
+
+exchange-serice library designed by Rozhkov Dmitrii (rozhkovdmitrii@yandex.ru). 
+
+The goal of it is to provide setting and gettign currency rates.
+To do it use public interface placed in ExchangeService header.
+
+The product was designed with Visual Studio 2017 and tested on Windows 7 (Intel Core i7 6700 2.6 GHz)
+
+BUILD (Windows):
+
+For building use cmake (https://cmake.org/download/) in following sequence:
+
+1. Go to source folder
+
+	cd exchange-service
+
+2. Make build folder and go into
+
+	mkdir build
+	cd build
+
+3. Make build configuration
+
+	cmake ..
+
+4. Build library for Release or Debug configuration
+
+	cmake --build . --target exchange-service --config Relese
+ 
+	cmake --build . --target exchange-service --config Debug
+
+5. Use it with pleasure
